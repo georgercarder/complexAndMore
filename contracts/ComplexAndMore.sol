@@ -3,6 +3,10 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/utils/math/SignedSafeMath.sol";
 
+// note on safemath vs solidity v8.. when this contract was written there was not 
+//   good support in tooling for the underlying errors from solc v8 safemath,
+//   so used safemath lib to have explicit overflow errors.
+
 import "hardhat/console.sol";
 
 library ComplexAndMore {
